@@ -2,7 +2,9 @@
 <suite name="Cucumber Parallel Suite" verbose="1" parallel="classes" thread-count="5">
     <test name="Cucumber Tests">
         <classes>
-            <class name="runner.TestRunner"/>
+            <class name="runner.testNGRunner"/>
+            
         </classes>
+        
     </test>
 </suite>

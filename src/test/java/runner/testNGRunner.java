@@ -1,33 +1,25 @@
 package runner;
+import java.io.File;
 
-
-
-
-import org.junit.runner.RunWith;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
+import com.cucumber.listener.Reporter;
 
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-
-
 //@RunWith(Cucumber.class)
 @CucumberOptions(
-		features = {"C:\\Users\\Admin\\eclipse-workspace\\Test_BDD2\\src\\test\\resources\\features\\Login.feature"},
-		glue = {"stepdefinitions", "hooks"},
-		tags="@test",
+		features = {"C:\\Users\\Admin\\eclipse-workspace\\API_TEST_CUCUMBER__BDD\\src\\test\\resources\\features"},
+		glue = {"stepdefinitions"},
+		tags="@get",
 		plugin = {"pretty",
 				"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:",
 				
-				"timeline:target/"
-
-				
-		}
-		
-		)
-
-
+				"timeline:target/"				
+		}		
+	)
 
 
 public class testNGRunner extends AbstractTestNGCucumberTests {
@@ -35,10 +27,9 @@ public class testNGRunner extends AbstractTestNGCucumberTests {
     @DataProvider(parallel = false)
    
     public Object[][] scenarios() {
-        return super.scenarios();
-       
-        
+        return super.scenarios();    
         
     }
-
+    
+   
 }

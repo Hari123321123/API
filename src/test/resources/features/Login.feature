@@ -1,41 +1,24 @@
+Feature: Test Reqres user api’s with rest assured library and cucumber framework
+
+  @test
+  Scenario Outline: Reqres GET API test
+    Given the valid endpoint to fetch users
+    When the request is send to server with page number as “<page>”
+    Then validate the response of first user record having email as "<emailID>"
+
+    Examples: 
+      | page | emailID                  |
+      |    2 | michael.lawson@reqres.in |
+      |    1 | george.bluth@reqres.in   |
+
+
 @test
-Feature: Login functionality
+ Scenario Outline: Reqres POST API test
 
-Scenario Outline: Login with valid credentials
-Given User navigates to login page
-When User enters valid email address <username> into email field
-And User enters valid password <password> into password field
-And User clicks on Login button
-Then User should get successfully logged in
+Given the valid endpoint with payload to create user
+When the request is send to the server
+Then the new user must be created with name as "<username>"
+
 Examples:
-|username								|password	|
-|chaudharishubham61@gmail.com	|qazEDC		|
-
-
-Scenario: Login with invalid credentials
-Given User navigates to login page
-When User enters invalid email address into email field
-And User enters invalid password "1234567890" into password field
-And User clicks on Login button
-Then User should get a proper warning message about credentials mismatch
-
-Scenario: Login with valid email and invalid password
-Given User navigates to login page
-When User enters valid email address "chaudharishubham61@gmail.com" into email field
-And User enters invalid password "qazEDC" into password field
-And User clicks on Login button
-Then User should get a proper warning message about credentials mismatch
-
-Scenario: Login with invalid email and valid password
-Given User navigates to login page
-When User enters invalid email address into email field
-And User enters valid password "12345" into password field
-And User clicks on Login button
-Then User should get a proper warning message about credentials mismatch
-
-Scenario: Login without providing any credentails
-Given User navigates to login page
-When User dont enter email address into email field
-And User dont enter password into password field
-And User clicks on Login button
-Then User should get a proper warning message about credentials mismatch 
+    |username|
+    | john  |

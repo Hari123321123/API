@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="src" output="target/classes" path="src/main/java">
-		<attributes>
-			<attribute name="optional" value="true"/>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
 			<attribute name="test" value="true"/>
@@ -22,7 +16,6 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
-			<attribute name="module" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -44,13 +37,44 @@
 	<classpathentry kind="lib" path="C:/lombok-1.18.26.jar"/>
 	<classpathentry kind="lib" path="C:/reactive-streams-1.0.4.jar"/>
 	<classpathentry kind="lib" path="C:/rxjava-3.1.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9.jar" sourcepath="C:/Users/Admin/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9-sources.jar">
+	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0.jar" sourcepath="C:/Users/Admin/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0-sources.jar">
 		<attributes>
 			<attribute name="maven.pomderived" value="true"/>
-			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/com/aventstack/extentreports/5.0.9/extentreports-5.0.9-javadoc.jar!/"/>
-			<attribute name="maven.groupId" value="com.aventstack"/>
-			<attribute name="maven.artifactId" value="extentreports"/>
-			<attribute name="maven.version" value="5.0.9"/>
+			<attribute name="test" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/io/cucumber/cucumber-java/6.9.0/cucumber-java-6.9.0-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="io.cucumber"/>
+			<attribute name="maven.artifactId" value="cucumber-java"/>
+			<attribute name="maven.version" value="6.9.0"/>
+			<attribute name="maven.scope" value="test"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1.jar" sourcepath="C:/Users/Admin/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/com/googlecode/json-simple/json-simple/1.1.1/json-simple-1.1.1-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="com.googlecode.json-simple"/>
+			<attribute name="maven.artifactId" value="json-simple"/>
+			<attribute name="maven.version" value="1.1.1"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.0.2/cucumber-extentsreport-3.0.2.jar" sourcepath="C:/Users/Admin/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.0.2/cucumber-extentsreport-3.0.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/com/vimalselvam/cucumber-extentsreport/3.0.2/cucumber-extentsreport-3.0.2-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="com.vimalselvam"/>
+			<attribute name="maven.artifactId" value="cucumber-extentsreport"/>
+			<attribute name="maven.version" value="3.0.2"/>
+			<attribute name="maven.scope" value="compile"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/Admin/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2.jar" sourcepath="C:/Users/Admin/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2-sources.jar">
+		<attributes>
+			<attribute name="maven.pomderived" value="true"/>
+			<attribute name="javadoc_location" value="jar:file:/C:/Users/Admin/.m2/repository/info/cukes/gherkin/2.12.2/gherkin-2.12.2-javadoc.jar!/"/>
+			<attribute name="maven.groupId" value="info.cukes"/>
+			<attribute name="maven.artifactId" value="gherkin"/>
+			<attribute name="maven.version" value="2.12.2"/>
 			<attribute name="maven.scope" value="compile"/>
 		</attributes>
 	</classpathentry>
