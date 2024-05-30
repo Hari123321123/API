@@ -1,4 +1,3 @@
-
 Feature: PUT: Automated Demo Tests
   Description: PUT: The purpose of this feature is to test some demo app.
 
@@ -12,7 +11,7 @@ Feature: PUT: Automated Demo Tests
     And I try to verify the response value "job" is "zion resident"
 
     Examples: 
-      | TestName  | URL          | ContentType      | RequestBody         | RequestMethod | StatusCode |
+      | TestName  | URL          | ContentType      | RequestBody                                                                               | RequestMethod | StatusCode |
       | Demo test | /api/users/2 | application/json | C:/Users/Admin/eclipse-workspace/API_TEST_CUCUMBER__BDD/src/test/java/testData/test2.json | PUT           |        201 |
 
   @putfail
