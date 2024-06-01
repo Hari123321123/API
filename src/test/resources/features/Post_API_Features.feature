@@ -19,7 +19,7 @@ Scenario Outline: Test Post API with multiple data set
 Examples:
 
     |NAME|JOB|
-    |Shruti|BA|
-    |Sweety|MA|
-    |Rani|AC|
-    |Arun|OWNER|
+    |Shubham|dev|
+    |Shrya|CA|
+    |Ram|AC|
+    |Ana|QA|
