@@ -19,6 +19,6 @@ Scenario Outline: Test the Put API with multiple data set
 Examples:
     
     |NAME|JOB|
-    |Veena|TR|
-    |Bella|CEO|
-    |Saum|ML|
+    |VIJAY|CA|
+    |JEMMA|CD|
+    |SHREE|MA|
