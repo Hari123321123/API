@@ -18,6 +18,6 @@ Scenario Outline: Test the Patch API with multiple data set
 Examples:
     
     |NAME|JOB|
-    |Shree|PDO|
-    |De|BA|
-    |Sky|CEO|
+    |RAJ|QA|
+    |SURAJ|BA|
+    |Dipak|tech|
